@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 
-// Pages
-import Dashboard from "./Pages/Dashboard";
-import Inventory from "./Pages/Inventory";
-import AddProduct from "./Pages/AddProduct";
-import Reports from "./Pages/Reports";
+// Pages (FIXED → lowercase "pages")
+import Dashboard from "./pages/Dashboard";
+import Inventory from "./pages/Inventory";
+import AddProduct from "./pages/AddProduct";
+import Reports from "./pages/Reports";
 
 // Auth
 import Login from "./Components/Auth/Login";
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        
+
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="inventory" element={<Inventory />} />
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="reports" element={<Reports />} />
         </Route>
 
-        {/* AUTH PAGES */}
+        {/* AUTH */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot" element={<ForgotPassword />} />
