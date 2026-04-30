@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 
 // Pages (FIXED → lowercase "pages")
-import Dashboard from "./pages/Dashboard";
-import Inventory from "./pages/Inventory";
-import AddProduct from "./pages/AddProduct";
-import Reports from "./pages/Reports";
+import Dashboard from "./Pages/Dashboard";
+import Inventory from "./Pages/Inventory";
+import AddProduct from "./Pages/AddProduct";
+import Reports from "./Pages/Reports";
 
 // Auth
 import Login from "./Components/Auth/Login";
